@@ -6,21 +6,59 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="./response.html"target="_blank"
-    name="Biodata" method="get"></form>
-    <fieldset>
-        <legend> Biodata</legend>
-        <lable for="name"></lable>
-        <input type="text" id="name" name="name"
-        placeholder="Enter Your Name"required>
-        <br><br>
-        <lable for="DOB"></lable>
-        <input type="date" id="DOB"
-        placeholder="Enter your age">
-        <br><br>
-        
-        
+    <form action="./response.html" target="_blank" name="Biodata" method="get"></form>
+<fieldset>
+    <legend>Biodata</legend>
+    <label for="name">Name:</label>
+    <input type="text"  id="name" name="name" placeholder="Enter your name" required>
+<br><br>
+    <label for="dob">DOB:</label>
+     <input type="date"  id="dob" name="dob" required>
+    <br><br>
+    <label for="tel">Phone:</label>
+    <input type="tel"  id="tel" name="tel" placeholder="Enter your phone number" min="10" max="10" required>
+<br><br>
+<label for="attempt">Attempt:</label>
+    <input type="number"  id="attempt" name="attempt"
+    min="1" max="5" required>
+<br><br>
+    <label for="email">Email:</label>
+    <input type="email"  id="email" name="email" placeholder="Enter your Email" required>
+<br><br>
+    <label for="gender">Gender:</label>
+    <input type="radio"  id="gender" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio"  id="gender" name="gender" value="female" required>
+    <label for="female">Female</label>
+<br><br>
+    <label for="check">Vehicle you have</label>
+    <input type="checkbox" id="bike" name="vehicle1" value="Bike" />
+    <label for="bike">Bike</label>
+    <input type="checkbox" id="car" name="vehicle2" value="Car" />
+    <label for="car">Car</label>
+<br><br>
 
-       </fieldset>
+    <label for="lang">Select Programing language</label>
+    <select name="lang" id="lang">\
+        <option >Select your language</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+    </select>
+    <br><br>
+
+
+    <label for="pass">Passward</label>
+    <input type="password" id="pass" name="pass" required>
+    <br><br>
+
+    <label for="appointment">Appointment</label>
+    <input type="time" id="appointment" name="appointment" required>
+<br><br>
+
+    <input type="submit" value="Submit" >
+    <input type="reset" value="Reset">
+</fieldset>
 </body>
 </html>
